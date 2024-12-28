@@ -20,10 +20,6 @@ function App() {
         </div>
         
         <div className="bg-white col-start-1 col-end-[18] row-start-2 row-end-3 grid place-items-center px-5 rounded-lg">
-          <div className="w-full flex justify-between">
-            <h1>Comparison of Auction Performance Over Time</h1>
-            <h1>Jan 2023 - Dec 2023</h1>
-          </div>
           <AuctionPerformance />
         </div>
       </div>

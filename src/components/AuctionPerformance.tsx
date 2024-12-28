@@ -127,6 +127,12 @@ const AuctionPerformance: React.FC = () => {
   const scaledMax = Math.ceil(maxAuctions * 1.2); // Scale it to 120% of the max to get 60-70% of axis
 
   return (
+    <>
+
+    <div className="w-full flex justify-between">
+    <h1>Comparison of Auction Performance Over Time</h1>
+    <h1>Jan 2023 - Dec 2023</h1>
+  </div>
     <div style={{ width: "100%", height: 400 }}>
       <ResponsiveContainer>
         <ComposedChart
@@ -184,6 +190,7 @@ const AuctionPerformance: React.FC = () => {
         </ComposedChart>
       </ResponsiveContainer>
     </div>
+    </>
   );
 };
 
