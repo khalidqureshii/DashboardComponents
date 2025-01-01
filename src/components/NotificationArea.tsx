@@ -10,7 +10,7 @@ import {
 
 const NotificationArea = () => {
   return (
-    <div>
+    <div className="flex flex-col h-full">
         <div className="flex justify-between p-5 border-b-2">
             <h1 className="text-xl font-semibold">Notifications</h1>
             <Select>
@@ -25,32 +25,54 @@ const NotificationArea = () => {
                 </SelectContent>
             </Select>
         </div>
-        <div className="px-5 mt-3 max-h-[880px] flex-grow overflow-y-auto">
-          <h1>Critical</h1>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <h1 className="mt-5">Moderate</h1>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-          <Notification title="Submit RFX responses"/>
-
+        <div className="flex justify-center items-center">
+          <div className="px-5 mt-3 xl:max-h-[880px] tc: max-h-[390px] flex-shrink overflow-y-auto flex flex-col">
+            <div className="flex"><h1>Critical</h1></div>
+            <div className="flex flex-wrap gap-4">
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+            </div>
+            <div className="flex"><h1>Moderate</h1></div>
+            <div className="flex flex-wrap gap-4 pb-6">
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+              <Notification title="Submit RFX responses"/>
+            </div>
+          </div>
         </div>
     </div>
   )

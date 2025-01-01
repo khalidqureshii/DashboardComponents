@@ -8,8 +8,9 @@ const CustomPieChart = () => {
     ];
 
     return (
-    <div className="px-4 py-5">
+    <div className="px-4 py-5 flex flex-col h-full flex-grow overflow-y-auto">
         <h1 className="text-left font-semibold text-xl">Average Bidding Activity</h1>
+        <div className="w-full grid place-content-center">
         <PieChart width={270} height={270}>
             <Pie
               data={data}
@@ -45,6 +46,8 @@ const CustomPieChart = () => {
               460
             </text>
         </PieChart>
+        </div>
+        
         <div className="flex border-b border-gray-200 mb-2">
           <div className="w-1/12">
             <div className="bg-white w-3.5 h-3.5 rounded-full mb-[0.94rem]"></div>

@@ -7,7 +7,7 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-  } from "@/components/ui/select"  
+} from "@/components/ui/select"  
 
 
 const ActivityCard = () => {
@@ -18,8 +18,8 @@ const ActivityCard = () => {
     const data6 = ["4056", "40,171", "211,508"]
 
   return (
-    <div className="px-5 w-full h-full">
-        <div className="flex justify-between mt-7 items-center mb-7">
+    <div className="w-full h-full flex flex-col">
+        <div className="flex justify-between my-7 items-center px-5">
             <h1 className="text-xl font-semibold">Recent Activity</h1>
             <Select defaultValue="lastMonth" onValueChange={(value) => {
                         if (value === "lastMonth") setIndex(0);
@@ -38,9 +38,13 @@ const ActivityCard = () => {
                 </SelectContent>
             </Select>
         </div>
-        <InfoCard title="Cycle time reduction V/s conventional negotiations" color1="bg-[#FFF4F0]" color2="bg-rejectedbg" index={index} data={data4}/>
-        <InfoCard title="Cumulative Savings achieved" color1="bg-[#E7F7FF]" color2="bg-draftbg" index={index} data={data5}/>
-        <InfoCard title="Total item of values Sold through auction" color1="bg-[#FDF4F7]" color2="bg-quotedbg" index={index} data={data6}/>
+        <div className="mt-3 max-h-[360px] flex-shrink overflow-y-auto px-5 pb-5">
+            <InfoCard title="Cycle time reduction V/s conventional negotiations" color1="bg-[#FFF4F0]" color2="bg-rejectedbg" index={index} data={data4}/>
+            <InfoCard title="Cumulative Savings achieved" color1="bg-[#E7F7FF]" color2="bg-draftbg" index={index} data={data5}/>
+            <InfoCard title="Total item of values Sold through auction" color1="bg-[#FDF4F7]" color2="bg-quotedbg" index={index} data={data6}/>
+            <InfoCard title="Cycle time reduction V/s conventional negotiations" color1="bg-[#FFF4F0]" color2="bg-rejectedbg" index={index} data={data4}/>
+            <InfoCard title="Cycle time reduction V/s conventional negotiations" color1="bg-[#FFF4F0]" color2="bg-rejectedbg" index={index} data={data4}/>
+        </div>
     </div>
   )
 }

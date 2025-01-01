@@ -1,3 +1,4 @@
+
 import ActivityCard from "./components/ActivityCard.js";
 import AuctionPerformance from "./components/AuctionPerformance.js";
 import CustomPieChart from "./components/CustomPieChart.js";
@@ -5,21 +6,22 @@ import NotificationArea from "./components/NotificationArea.js";
 
 function App() {
   return (
-    <div className="h-[115vh] w-full grid place-items-center bg-slate-700">
-      <div className="grid grid-cols2 grid-cols-[repeat(23,minmax(0,1fr))] grid-rows-2 w-[66%] p-4 h-[109vh] gap-6">
-        <div className="bg-white col-start-1 col-end-12 row-start-1 row-end-2 grid place-items-center rounded-lg">
+    <div className="w-full grid place-content-center bg-slate-700 py-6">
+      <div className="grid xl:grid-cols-[repeat(23,minmax(0,1fr))] tc:grid-cols-[repeat(17,minmax(0,1fr))] xl:grid-rows-2 tc:grid-rows-3 w-auto p-4 xl:min-h-[109vh] tc:min-h-[130vh] gap-5">
+        <div className="bg-white tc:col-start-1 tc:col-end-12 tc:row-start-1 tc:row-end-2 rounded-lg tc:w-[550px] tc:max-h-[464px] w-[350px]">
           <ActivityCard />
         </div>
 
-        <div className="bg-white col-start-12 col-end-[18] row-start-1 row-end-2 rounded-lg">
-          <CustomPieChart />
+        <div className="bg-white tc:col-start-12 tc:col-end-[18] tc:row-start-1 tc:row-end-2 rounded-lg tc:w-[306px] tc:max-h-[464px] w-[350px]">
+          <CustomPieChart /> 
         </div>
         
-        <div className="bg-white col-start-[18] col-end-[24] row-start-1 row-end-3 rounded-lg">
+        <div className="bg-white xl:col-start-[18] xl:col-end-[24] xl:row-start-1 xl:row-end-3 rounded-lg tc:w-[893px] xl:w-[306px] w-[350px]
+          tc:col-start-1 tc:col-end-[18] tc:row-start-3 tc:row-end-4 xl:max-h-[986px]">
           <NotificationArea />
         </div>
         
-        <div className="bg-white col-start-1 col-end-[18] row-start-2 row-end-3 grid place-items-center px-5 rounded-lg">
+        <div className="bg-white tc:col-start-1 tc:col-end-[18] tc:row-start-2 tc:row-end-3 grid place-items-center px-5 rounded-lg tc:w-[893px] tc:max-h-[480px] w-[350px]">
           <AuctionPerformance />
         </div>
       </div>
