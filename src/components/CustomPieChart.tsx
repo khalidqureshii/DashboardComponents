@@ -8,7 +8,7 @@ const CustomPieChart = () => {
     ];
 
     return (
-    <div className="px-4 py-5 flex flex-col h-full flex-grow overflow-y-auto">
+    <div className="px-4 py-5 flex flex-col h-full flex-grow overflow-y-auto overflow-hidden">
         <h1 className="text-left font-semibold text-xl">Average Bidding Activity</h1>
         <div className="w-full grid place-content-center">
         <PieChart width={270} height={270}>

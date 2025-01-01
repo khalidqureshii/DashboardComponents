@@ -26,7 +26,7 @@ const NotificationArea = () => {
             </Select>
         </div>
         <div className="flex justify-center items-center">
-          <div className="px-5 mt-3 xl:max-h-[880px] tc: max-h-[390px] flex-shrink overflow-y-auto flex flex-col">
+          <div className="px-5 mt-3 xl:max-h-[880px] tc: max-h-[390px] flex-shrink overflow-y-auto flex flex-col overflow-hidden">
             <div className="flex"><h1>Critical</h1></div>
             <div className="flex flex-wrap gap-4">
               <Notification title="Submit RFX responses"/>
